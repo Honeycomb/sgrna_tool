@@ -1,0 +1,28 @@
+sudo apt install git
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+nvm install node
+nvm use node
+mkdir sgrna_tool
+cd sgrna_tool/
+python3 -m venv venv
+source venv/bin/activate
+pip install flask
+pip install flask-reskful
+pip install python-dotenv
+touch .flaskenv
+    .flaskenv
+    FLASK_APP=base.py
+    FLASK_ENV=development
+touch base.py
+mkdir front-end
+cd front-end/
+npx create-react-app .
+cd ..
+mkdir api
+cd api/
+touch handler.py
+flask run
+sudo fuser -k 5000/tcp (Kill Flask)
+npm start
+sudo fuser -k 3000/tcp (Kill React)
+npm run build
