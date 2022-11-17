@@ -12,7 +12,7 @@ pip install python-dotenv
 touch .flaskenv
     .flaskenv
     FLASK_APP=base.py
-    FLASK_ENV=development
+    FLASK_DEBUG=true
 touch base.py
 mkdir front-end
 cd front-end/
@@ -20,9 +20,16 @@ npx create-react-app .
 cd ..
 mkdir api
 cd api/
-touch handler.py
+touch hello.py
 flask run
-sudo fuser -k 5000/tcp (Kill Flask)
+localhost:3000
+sudo fuser -k 5000/tcp (Kill Flask) or CTRL + c to quit
 npm start
-sudo fuser -k 3000/tcp (Kill React)
+localhost:5000/hello
+sudo fuser -k 3000/tcp (Kill React) or CTRL + c to quit
 npm run build
+
+cd sgrna_tool/
+source venv/bin/activate
+flask run
+npm start
