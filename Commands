@@ -32,4 +32,5 @@ npm run build
 cd sgrna_tool/
 source venv/bin/activate
 flask run
+cd front-end/
 npm start
