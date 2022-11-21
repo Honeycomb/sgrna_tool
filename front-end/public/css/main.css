@@ -92,13 +92,13 @@ input:focus {
 }
 
 input::placeholder {
-  color: a2a2a2;
+  color: #a2a2a2;
 }
 
 html {
   color: black;
   background-color: #fafafa;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 }
 
 /* ==========================================================================
