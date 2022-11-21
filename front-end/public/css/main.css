@@ -87,18 +87,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  color: black;
+  background-color: #fafafa;
+  font-family: "Noto Sans";
+}
+
 input:focus {
   outline: none;
 }
 
 input::placeholder {
   color: #a2a2a2;
-}
-
-html {
-  color: black;
-  background-color: #fafafa;
-  font-family: "Noto Sans";
 }
 
 /* ==========================================================================
